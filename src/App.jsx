@@ -10,6 +10,7 @@ import Carousel from './components/Carousel'
 import image from "./components/image/reacticon.png";
 import Allocate from './components/Allocate'
 import Embrace from './components/Embrace'
+import Footer from './components/Footer'
 
 function App() {
   
@@ -47,6 +48,7 @@ function App() {
 
       <Allocate/>
       <Embrace/>
+      <Footer/>
     
     </>
   )
