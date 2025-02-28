@@ -5,6 +5,7 @@ import ResponsiveAppBar from './components/nav'
 import Hero from './components/Hero'
 import Ourpartners from './components/Ourpartners'
 import Control from './components/Control'
+import Train from './components/Train'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
     <Hero/>
     <Ourpartners/>
     <Control/>
+    <Train/>
     
     </>
   )
