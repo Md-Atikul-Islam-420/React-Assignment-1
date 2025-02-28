@@ -9,16 +9,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import img from '../components/image/Logo.png'
-
-
+import img from '../components/image/Logo.png'; 
 
 const pages = ['About Us', 'Pricing', 'Customers', 'Solutions'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-  const handleOpenNavMenu = event => {
+  const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
 
@@ -33,7 +31,7 @@ function ResponsiveAppBar() {
           <img
             src={img}
             className="hidden ml-10 md:flex mr-34 lg:flex xl:flex"
-            alt=""
+            alt="Logo"
           />
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -62,7 +60,7 @@ function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
-              {pages.map(page => (
+              {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
                 </MenuItem>
@@ -71,7 +69,7 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map(page => (
+            {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
@@ -81,7 +79,7 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-          <div className='hidden md:flex flex-row'>
+          <div className="hidden md:flex flex-row">
             <Button
               variant="contained"
               sx={{
@@ -99,7 +97,7 @@ function ResponsiveAppBar() {
               Contact Us
             </Button>
           </div>
-          <img src={img} className='md:hidden flex mr-5' alt="" />
+          <img src={img} className="md:hidden flex mr-5" alt="Logo" />
         </Toolbar>
       </Container>
     </AppBar>
