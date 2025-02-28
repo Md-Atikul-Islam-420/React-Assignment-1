@@ -4,6 +4,7 @@ import './App.css'
 import ResponsiveAppBar from './components/nav'
 import Hero from './components/Hero'
 import Ourpartners from './components/Ourpartners'
+import Control from './components/Control'
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
     <ResponsiveAppBar/>
     <Hero/>
     <Ourpartners/>
+    <Control/>
     
     </>
   )
