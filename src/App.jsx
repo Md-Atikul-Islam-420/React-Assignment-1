@@ -9,6 +9,7 @@ import Train from './components/Train'
 import Carousel from './components/Carousel'
 import image from "./components/image/reacticon.png";
 import Allocate from './components/Allocate'
+import Embrace from './components/Embrace'
 
 function App() {
   
@@ -45,6 +46,7 @@ function App() {
       </Carousel>
 
       <Allocate/>
+      <Embrace/>
     
     </>
   )
